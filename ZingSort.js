@@ -228,7 +228,10 @@ function myJsFunction(){
  			plot:{
    	  		  alpha:0.8,
    	  		  borderRadius:"4px",
-   	  		  backgroundColor: "#6699ff"
+   	  		  backgroundColor: "#6699ff",
+   	  		  "animation":{
+        		"effect":"ANIMATION_EXPAND_BOTTOM"
+    		  },
    			},
     		"series":[  // Insert your series data here.
     		{ "values": [quickTime, bubbleTime, mergeTime, insertionTime, selectionTime]},
@@ -289,7 +292,10 @@ function myJsFunction(){
  		plot:{
    	  	  alpha:0.8,
    	  	  borderRadius:"4px",
-   	  	  backgroundColor: "#6699ff"
+   	  	  backgroundColor: "#6699ff",
+   	  	  "animation":{
+        	"effect":"ANIMATION_EXPAND_BOTTOM"
+    	  },
    		},
     	"series":[  // Insert your series data here.
     	{ "values": [quickTime, bubbleTime, mergeTime, insertionTime, selectionTime]},
