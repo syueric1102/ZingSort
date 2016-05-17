@@ -7,7 +7,6 @@ var insertionTime = 0;
 var mergeTime = 0;
 var quickTime = 0;
 
-
 //Parse Input Into Array (User Input)
 function getInput(str) {
 	var str_split = str.split(" ");
@@ -217,26 +216,31 @@ function myJsFunction(){
 	//printArray(input);
 
 	var chartData={
-    		"type":"bar",  // Specify your chart type here.
-    		backgroundColor: "#adcceb",
-    		title:{
- 	  			text: "Algorithm Speed (ms)"
- 			},
-    		"scale-x":{
- 	  	  	  values:["QuickSort","BubbleSort","MergeSort","InsertionSort","SelectionSort"]
- 			},
- 			"plot":{
-   	  		  alpha:0.8,
-   	  		  borderRadius:"4px",
-   	  		  backgroundColor: "#6699ff",
-   	  		  "animation":{
-   	  	  		"effect":"ANIMATION_EXPAND_BOTTOM"
-   	  	  	  }
-   			},
-    		"series":[  // Insert your series data here.
-    		{ "values": [quickTime, bubbleTime, mergeTime, insertionTime, selectionTime]},
-    		]
-    	};
+		globals:{
+			fontFamily:"Palatino Linotype",
+			fontColor:"#545454",
+		},
+    	"type":"bar",  // Specify your chart type here.
+    	backgroundColor: "#adcceb",
+    	title:{
+ 	 		text: "Algorithm Speed (ms)"
+ 		},
+    	"scale-x":{
+ 	   	  values:["QuickSort","BubbleSort","MergeSort","InsertionSort","SelectionSort"]
+ 		},
+ 		"plot":{
+    	  alpha: 0.75,
+   	  	  borderRadius:"4px",
+   	  	  backgroundColor: "#6699ff",
+   	  	  "styles":["#eed467","#8cb9ec","#7fb47d","#d487a2","#c797d0"],
+   	  	  "animation":{
+   	  	  	"effect":"ANIMATION_EXPAND_BOTTOM"
+   	  	    }
+   		},
+    	"series":[  // Insert your series data here.
+    	{ "values": [quickTime, bubbleTime, mergeTime, insertionTime, selectionTime]},
+    	]
+    };
   		zingchart.render({ // Render Method[3]
   			id:'chartDiv',
   			data:chartData,
@@ -281,6 +285,10 @@ function myJsFunction(){
 	//printArray(input);
 
 	var chartData={
+		globals:{
+			fontFamily:"Palatino Linotype",
+			fontColor:"#545454",
+		},
     	"type":"bar",  // Specify your chart type here.
     	backgroundColor: "#adcceb",
     	title:{
@@ -293,6 +301,7 @@ function myJsFunction(){
    	  	  alpha:0.8,
    	  	  borderRadius:"4px",
    	  	  backgroundColor: "#6699ff",
+   	  	  "styles":["#eed467","#8cb9ec","#7fb47d","#d487a2","#c797d0"],
    	  	  "animation":{
    	  	  	"effect":"ANIMATION_EXPAND_BOTTOM"
    	  	  }
