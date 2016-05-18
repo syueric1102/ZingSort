@@ -2,16 +2,16 @@ body {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	background-color: #adcceb;
 	margin: 10px auto;
-	width: 10%;
+	width: 47%;
 	height: 47%;    
 }
 
 .container {
-    width:10%;
+    width:100%;
     border:1px solid #d3d3d3;
 }
 .container div {
-    width:10%;
+    width:100%;
 }
 .container .header {
     background-color:#d3d3d3;
