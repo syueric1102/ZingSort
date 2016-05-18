@@ -1,3 +1,4 @@
+
 <DOCTYPE html>
 	<html>
 	<head>
@@ -5,54 +6,52 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css ">
 		<script src="ZingSort.js"></script>
 		<script src="http://cdn.zingchart.com/zingchart.min.js"></script>
+		<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+		<p align="middle"; style="color:#545454; font-size: 40">ZingSort</p>
 	</head>
 	<body>
-		<p align="middle"; style="color:#545454; font-size: 40">ZingSort</p>
 		<div align = "middle">
-			<button onclick="instructions()"; type="button">Instructions</button>
+			<button onclick="instructions()"; class='ph-button ph-btn-grey'>Instructions</a></button>
+		</div><br>	
+		<div class="form-style-5">
+			<input type="text" id="input1" placeholder="Enter an array length or initialize your own array, separated by a space">
 		</div>
-
 		<div align = "middle">
-			<input type="text" id="input1"/>
-		</div>
-		
-		<div align = "middle">
-			<button onclick="myJsFunction()"; type="button">Randomize and Sort!</button>
-			<button onclick="myJsFunction2()"; type="button">Sort!</button>
+			<button onclick="myJsFunction()"; class='ph-button ph-btn-grey'>Sort Random Array!</a>
+			<button onclick="myJsFunction2()"; class='ph-button ph-btn-grey'>Sort My Array!</a>
 		</div>
 		<div align="middle"; id ='chartDiv'>
 			<script>
-				//initialize a blank chart
-				var chartData={
+			//initialize a blank chart
+			var chartData={
 				globals:{
-					fontFamily:"Palatino Linotype"
+					fontFamily:"Palatino Linotype",
+					fontColor:"#545454",
 				},
-    			"type":"bar",
-    			backgroundColor: "#adcceb",
-    			title:{
- 	  			  text: "Algorithm Speed (ms)"
- 				},
-    			"scale-x":{
- 	  	  		  values:["QuickSort","BubbleSort","MergeSort","InsertionSort","SelectionSort"]
- 				},
- 				plot:{
-   	  			  alpha:0.8,
-   	  			  borderRadius:"4px",
-   	  			  backgroundColor: "#6699ff"
-   				},
-    			"series":[
-    			 { "values": [0, 0, 0, 0, 0]},
-    			]
-  			};
-  			zingchart.render({
-    		    id:'chartDiv',
-   	  		  data:chartData,
-    			height:400,
-    			width:600
-  			});	
-			</script>
-		</div>
+				"type":"bar",
+				backgroundColor: "#adcceb",
+				title:{
+					text: "Algorithm Speed (ms)"
+				},
+				"scale-x":{
+					values:["QuickSort","BubbleSort","MergeSort","InsertionSort","SelectionSort"]
+				},
+				plot:{
+					alpha:0.8,
+					borderRadius:"4px",
+					backgroundColor: "#6699ff"
+				},
+				"series":[
+				{ "values": [0, 0, 0, 0, 0]},
+				]
+			};
+			zingchart.render({
+				id:'chartDiv',
+				data:chartData,
+				height:400,
+				width:600
+			});	
+		</script>
+	</div>
 	</body>
-</html>
-
-
+	</html>
