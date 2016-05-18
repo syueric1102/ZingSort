@@ -225,9 +225,11 @@ function myJsFunction(){
     	title:{
  	 		text: "Algorithm Speed (ms)"
  		},
-	"scale-y":{
-		"text":"Sorting Time (Milliseconds)",
-	}
+	"scale-y": {
+    		label:{
+        		text:"Sorting Time (Milliseconds)",
+    		},
+	},
     	"scale-x":{
  	   	  values:["QuickSort","BubbleSort","MergeSort","InsertionSort","SelectionSort"]
  		},
@@ -297,9 +299,11 @@ function myJsFunction(){
     	title:{
  	  		text: "Algorithm Speed (ms)"
  	},
-	"scale-y":{
-		"text":"Sorting Time (Milliseconds)",
-	}, 		
+	"scale-y": {
+    		label:{
+        		text:"Sorting Time (Milliseconds)",
+    		},
+	},		
     	"scale-x":{
  	  	  values:["QuickSort","BubbleSort","MergeSort","InsertionSort","SelectionSort"]
  		},
