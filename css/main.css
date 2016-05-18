@@ -6,6 +6,12 @@ body {
 	height: 47%;    
 }
 
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
 .container {
     width:100%;
     border:1px solid #d3d3d3;
