@@ -216,6 +216,28 @@ function myJsFunction(){
 	//printArray(input);
 
 	var chartData={
+<<<<<<< HEAD
+    		"type":"bar",  // Specify your chart type here.
+    		backgroundColor: "#adcceb",
+    		title:{
+ 	  			text: "Algorithm Speed (ms)"
+ 			},
+    		"scale-x":{
+ 	  	  	  values:["QuickSort","BubbleSort","MergeSort","InsertionSort","SelectionSort"]
+ 			},
+ 			plot:{
+   	  		  alpha:0.8,
+   	  		  borderRadius:"4px",
+   	  		  backgroundColor: "#6699ff",
+   	  		  "animation":{
+        		"effect":"ANIMATION_EXPAND_BOTTOM"
+    		  },
+   			},
+    		"series":[  // Insert your series data here.
+    		{ "values": [quickTime, bubbleTime, mergeTime, insertionTime, selectionTime]},
+    		]
+    	};
+=======
 		globals:{
 			fontFamily:"Palatino Linotype",
 			fontColor:"#545454",
@@ -241,6 +263,7 @@ function myJsFunction(){
     	{ "values": [quickTime, bubbleTime, mergeTime, insertionTime, selectionTime]},
     	]
     };
+>>>>>>> master
   		zingchart.render({ // Render Method[3]
   			id:'chartDiv',
   			data:chartData,
@@ -301,10 +324,16 @@ function myJsFunction(){
    	  	  alpha:0.8,
    	  	  borderRadius:"4px",
    	  	  backgroundColor: "#6699ff",
+<<<<<<< HEAD
+   	  	  "animation":{
+        	"effect":"ANIMATION_EXPAND_BOTTOM"
+    	  },
+=======
    	  	  "styles":["#eed467","#8cb9ec","#7fb47d","#d487a2","#c797d0"],
    	  	  "animation":{
    	  	  	"effect":"ANIMATION_EXPAND_BOTTOM"
    	  	  }
+>>>>>>> master
    		},
     	"series":[  // Insert your series data here.
     	{ "values": [quickTime, bubbleTime, mergeTime, insertionTime, selectionTime]},
