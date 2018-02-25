@@ -191,6 +191,10 @@ function myJsFunction(){
 	}
 	else {
 		getInputRand(document.getElementById('input1').value);
+		if (parseInt(document.getElementById('input1').value)  > 30000) {
+			alert("Please enter a smaller number so your browser's memory doesn't overflow");
+			return;
+		}
 		shuffle();
 
 	//printArray(input);
